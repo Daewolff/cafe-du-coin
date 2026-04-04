@@ -14,6 +14,13 @@ Application web de gestion de commandes pour un café, développée en Python av
 - HTML / CSS / Jinja2
 - PyInstaller (packaging en .exe)
 
+## Connexion à la démo
+Le site est accessible ici : https://davidgenty.pythonanywhere.com
+
+Identifiants de démonstration :
+- Utilisateur : demo
+- Mot de passe : demo
+
 ## État du projet
 ✅ Étapes 1 à 8 terminées (application complète et fonctionnelle)
 ⬜ Étape 8 Bis (icône personnalisée et splash screen) — en cours
