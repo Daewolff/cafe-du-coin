@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h2>Détails de la commande #{{ commande.id }}</h2>
+
+<p><strong>Nom du client :</strong> {{ commande.nom }}</p>
+<p><strong>Produit :</strong> {{ commande.produit }}</p>
+<p><strong>Quantité :</strong> {{ commande.quantite }}</p>
+
+<p><a href="/commandes">← Retour à la liste</a></p>
+
+{% endblock %}

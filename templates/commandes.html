@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h2>Liste des commandes</h2>
+
+<form method="get" action="/commandes" style="margin-bottom:20px;">
+    <input type="text" name="search" placeholder="Rechercher un nom" value="{{ search }}">
+    
+    <select name="produit">
+        <option value="">Tous les produits</option>
+        <option value="Café" {% if produit_filter == "Café" %}selected{% endif %}>Café</option>
+        <option value="Thé" {% if produit_filter == "Thé" %}selected{% endif %}>Thé</option>
+        <option value="Croissant" {% if produit_filter == "Croissant" %}selected{% endif %}>Croissant</option>
+        <option value="Sandwich" {% if produit_filter == "Sandwich" %}selected{% endif %}>Sandwich</option>
+    </select>
+
+    <button type="submit">Filtrer</button>
+    <a href="/commandes/export?search={{ search }}&produit={{ produit_filter }}">Exporter CSV</a>
+</form>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Nom</th>
+        <th>Produit</th>
+        <th>Quantité</th>
+        <th>Actions</th>
+    </tr>
+
+    {% for c in commandes %}
+    <tr>
+        <td>{{ c.id }}</td>
+        <td>{{ c.nom }}</td>
+        <td>{{ c.produit }}</td>
+        <td>{{ c.quantite }}</td>
+        <td>
+            <a href="/commande/{{ c.id }}">Voir</a> |
+            <a href="/commande/{{ c.id }}/edit">Modifier</a> |
+            <a href="/commande/{{ c.id }}/delete">Supprimer</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

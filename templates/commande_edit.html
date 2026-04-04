@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h2>Modifier la commande #{{ commande.id }}</h2>
+
+<form action="/commande/{{ commande.id }}/edit" method="post">
+
+    <label>Nom du client :</label>
+    <input type="text" name="nom" value="{{ commande.nom }}" required>
+
+    <label>Produit :</label>
+    <select name="produit" required>
+        <option {% if commande.produit == "Café" %}selected{% endif %}>Café</option>
+        <option {% if commande.produit == "Thé" %}selected{% endif %}>Thé</option>
+        <option {% if commande.produit == "Croissant" %}selected{% endif %}>Croissant</option>
+        <option {% if commande.produit == "Sandwich" %}selected{% endif %}>Sandwich</option>
+    </select>
+
+    <label>Quantité :</label>
+    <input type="number" name="quantite" value="{{ commande.quantite }}" min="1" required>
+
+    <button type="submit">Enregistrer les modifications</button>
+</form>
+
+<p><a href="/commandes">← Retour à la liste</a></p>
+
+{% endblock %}

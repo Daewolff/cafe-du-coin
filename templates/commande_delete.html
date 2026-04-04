@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h2>Supprimer la commande #{{ commande.id }}</h2>
+
+<p>Voulez-vous vraiment supprimer cette commande ?</p>
+
+<p><strong>{{ commande.quantite }} x {{ commande.produit }}</strong> pour <strong>{{ commande.nom }}</strong></p>
+
+<form action="/commande/{{ commande.id }}/delete" method="post">
+    <button type="submit" style="background:red;">Supprimer définitivement</button>
+</form>
+
+<p><a href="/commandes">Annuler</a></p>
+
+{% endblock %}

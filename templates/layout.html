@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Café du Coin ☕</h1>
+
+    <nav>
+        <a href="/">Accueil</a>
+
+        {% if session.logged_in %}
+            <a href="/commande">Passer une commande</a>
+            <a href="/commandes">Voir les commandes</a>
+            <a href="/logout" style="color:yellow;">Déconnexion</a>
+        {% else %}
+            <a href="/login">Connexion</a>
+        {% endif %}
+    </nav>
+</header>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+<footer>
+    <p>© Café du Coin — Développé par David</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f3e9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #6b3e26;
+    color: white;
+    padding: 15px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #6b3e26;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    background: #6b3e26;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #8c4f33;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #6b3e26;
+    color: white;
+}
+
+/* --- RESPONSIVE --- */
+
+@media (max-width: 600px) {
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+
+    td {
+        border: none;
+        padding: 5px 0;
+    }
+
+    td::before {
+        font-weight: bold;
+        display: block;
+        color: #6b3e26;
+    }
+
+    td:nth-child(1)::before { content: "ID"; }
+    td:nth-child(2)::before { content: "Nom"; }
+    td:nth-child(3)::before { content: "Produit"; }
+    td:nth-child(4)::before { content: "Quantité"; }
+    td:nth-child(5)::before { content: "Actions"; }
+}

@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h2>Passer une commande</h2>
+
+<form action="/commande" method="post">
+    <label>Nom du client :</label>
+    <input type="text" name="nom" required>
+
+    <label>Produit :</label>
+    <select name="produit" required>
+        <option>Café</option>
+        <option>Thé</option>
+        <option>Croissant</option>
+        <option>Sandwich</option>
+    </select>
+
+    <label>Quantité :</label>
+    <input type="number" name="quantite" min="1" required>
+
+    <button type="submit">Valider la commande</button>
+</form>
+
+{% endblock %}
