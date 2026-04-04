@@ -5,10 +5,10 @@ import io
 from database import init_db, DB_NAME
 import os
 
+# Création auto de la base si absente
 if not os.path.exists(DB_NAME):
     print("Base absente → création…")
     init_db()
-
 
 
 app = Flask(__name__)
@@ -38,7 +38,7 @@ def login_submit():
     username = request.form["username"]
     password = request.form["password"]
 
-    if username == "admin" and password == "1234":
+    if username == "demo" and password == "demo":
         session["logged_in"] = True
         return redirect("/commandes")
     else:
