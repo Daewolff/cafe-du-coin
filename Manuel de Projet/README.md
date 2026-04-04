@@ -19,13 +19,19 @@ Application web de gestion de commandes pour un café, développée en Python av
 ⬜ Étape 8 Bis (icône personnalisée et splash screen) — en cours
 
 ## Comment ce projet a été réalisé
-Ce projet a été entièrement conçu et développé avec l'aide de l'IA GitHub Copilot.
+Ce projet a été entièrement conçu et développé avec l'aide de l'IA Copilot sur Visual Studio Code.
 Je suis débutant en programmation, sans formation payante, sans école de code.
 Juste moi, ma curiosité, et une IA pour m'accompagner étape par étape.
 
-L'objectif : prouver qu'en 2025, avec de la motivation et les bons outils,
-n'importe qui peut créer une vraie application — sans dépenser des centaines
-d'euros en formations qui fleurissent partout sur internet.
+L'objectif : prouver qu'en 2026, avec de la motivation et les bons outils,
+n'importe qui peut apprendre les bases et se perfectionner — sans dépenser des centaines
+d'euros en formations qui fleurissent partout sur internet, et qui promettent d'être
+opérationnel en 5 jours, ce qui selon moi est impossible.
+
+J'ai testé également le NoCode, avec des logiciels comme Make et Bubble, mais pour être
+honnête, je préfère pratiquer ainsi avec l'IA, au fur et à mesure. En ayant des explications
+à chaque étape, c'est un peu comme avoir un professeur à la maison qui donne les lignes
+de code en les expliquant.
 
 ## Auteur
 Projet réalisé par Daewolff 🚀
