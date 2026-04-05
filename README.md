@@ -22,7 +22,7 @@ Identifiants de démonstration :
 - Mot de passe : demo
 
 ## État du projet
-✅ Étapes 1 à 8 terminées (application complète et fonctionnelle)
+✅ Étapes 1 à 8 terminées (voir manuel)
 ⬜ Étape 8 Bis (icône personnalisée et splash screen) — en cours
 
 ## Comment ce projet a été réalisé
