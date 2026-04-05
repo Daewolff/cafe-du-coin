@@ -23,7 +23,7 @@ Identifiants de démonstration :
 
 ## État du projet
 ✅ Étapes 1 à 8 terminées (voir manuel)
-⬜ Étape 8 Bis (icône personnalisée et splash screen) — en cours
+ ⬜ Étape 8 Bis (icône personnalisée et splash screen) — en cours
 
 ## Comment ce projet a été réalisé
 Ce projet a été entièrement conçu et développé avec l'aide de l'IA Copilot sur Visual Studio Code.
